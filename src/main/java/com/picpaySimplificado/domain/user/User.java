@@ -9,12 +9,12 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-@Entity(name="users")
-@Table(name="users")
+@Entity(name = "users")
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode(of="id")
+@EqualsAndHashCode(of = "id")
 public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
